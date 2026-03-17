@@ -96,8 +96,8 @@ VALUE_BETA = 0.7
 # =========================
 @st.cache_data
 def load_data():
-    products = pd.read_csv("data/products.csv")
-    reviews = pd.read_csv("data/reviews.csv", on_bad_lines="skip")
+    products = pd.read_csv("products.csv")
+    reviews = pd.read_csv("reviews.csv", on_bad_lines="skip")
     return products, reviews
 
 # =========================
