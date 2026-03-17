@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 讀取原始資料
-df = pd.read_csv(r"C:\Users\wang\Desktop\蘭馨盃\民宿數據_客戶評價.csv")
+df = pd.read_csv(r"民宿數據_客戶評價.csv")
 
 # 合併優點與缺點
 df["review_text"] = df["民宿優點"].fillna("") + " " + df["民宿缺點"].fillna("")
